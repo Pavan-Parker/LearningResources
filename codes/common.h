@@ -9,7 +9,8 @@
 double GetTime()
 {
     struct timeval t;
-    int rc=gettimeofday(&t,)
+    int rc=gettimeofday(&t,NULL);
+    
 
     
 }
