@@ -10,7 +10,6 @@ double GetTime()
 {
     struct timeval t;
     int rc=gettimeofday(&t,NULL);
-    printf("rc==%d",rc);
     assert(rc==0);
     return (double) t.tv_sec + (double)t.tv_usec/1e6;    
 }

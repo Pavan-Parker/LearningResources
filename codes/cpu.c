@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<stdio.h> // for system Calls, here for PID info
+#include<stdlib.h> //
 #include<sys/time.h>
 #include "common.h"
 
@@ -18,4 +18,4 @@ int main(int argc,char *argv[])
         Spin(1);
     }
     
-}.0
+}
