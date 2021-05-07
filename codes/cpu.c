@@ -1,5 +1,5 @@
 #include<stdio.h> // for system Calls, here for PID info
-#include<stdlib.h> //
+#include<stdlib.h> //collection of methods, mainly of mem allocation and atoi stoi etc
 #include<sys/time.h>
 #include "common.h"
 
