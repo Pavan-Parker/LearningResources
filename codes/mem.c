@@ -5,13 +5,15 @@
 
 int main(int argc, char *argv[])
 {
+    printf("YEP!\n");
     int *p=malloc(sizeof(int));
     assert(p!=NULL);
-
+    printf("for PID:%d, p is pointing to address:%p\n",getpid(),p);
+    *p=0;
     while (1)
     {
         Spin(1);
-        printf("for PID:%d, p is pointing to address:%p",getpid(),p);
+        printf("for PID:%d, p = %d\n",getpid(),*p);
         *p+=1;
     }
     return 0;
