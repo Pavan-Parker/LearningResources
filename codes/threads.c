@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h> //collection of methods, mainly of mem allocation and atoi stoi etc
-#include<pthread.h>
+#include<pthread.h> //for threading
 #include "common.h"
 
 volatile int counter=0;
@@ -35,6 +35,7 @@ int main(int argc,char *argv[])
     pthread_join(p2,NULL);
 
     printf("Final value: %d\n",counter);
+    printf("Misses : %d\n",(2*loops) - counter);
 
     return 0;
     
